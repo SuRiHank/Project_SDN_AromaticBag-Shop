@@ -4,19 +4,28 @@ import Slider from "./Slider";
 import ProductCategory from "./ProductCategory";
 import { homeState, homeReducer } from "./HomeContext";
 import IntroduceAboutShop from "./IntroduceAboutShop";
+import HomePage from "../HomePage/HomePage";
 export const HomeContext = createContext();
+
+// const HomeComponent = () => {
+//   return (
+//     <Fragment>
+//       <Slider />
+//       <section className="mr-6 ml-6">
+//         <IntroduceAboutShop />
+//       </section>
+//       <section className="mr-4 ml-4 mb-20">
+//         <ProductCategory />
+//       </section>
+//     </Fragment>
+//   );
+// };
 
 const HomeComponent = () => {
   return (
-    <Fragment>
-      <Slider />
-      <section className="mr-6 ml-6">
-        <IntroduceAboutShop />
-      </section>
-      <section className="mr-4 ml-4 mb-20">
-        <ProductCategory />
-      </section>
-    </Fragment>
+    <>
+      <HomePage/>
+    </>
   );
 };
 
